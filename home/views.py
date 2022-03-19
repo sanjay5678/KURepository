@@ -193,16 +193,19 @@ def status(request):
                     mobile = getattr(obj, 'mob')
                     photo = getattr(obj, 'photo')
                     sta = getattr(obj, 'status')
+                    tsta=getattr(obj,'transactionstatus')
                     bsta = rej = False
-
+                    tstabool=False
                     if sta == 'Approved':
                         request.session['fmobile'] = mobile
                         bsta = True
                     elif sta == 'Rejected':
                         request.session['fmobile'] = mobile
                         rej = True
+                    if tsta=="Approved":
+                        tstabool=True
                     srea = getattr(obj, 'S_Reason')
-                    return render(request, 'status.html', {'photo': photo, 'cname': name, 'fname': fname, 'mobile': mobile, 'bstatus': bsta, 'status': sta, 'Sreason': srea, 'Rstatus': rej})
+                    return render(request, 'status.html', {'paystatus':tstabool,'photo': photo, 'cname': name, 'fname': fname, 'mobile': mobile, 'bstatus': bsta, 'status': sta, 'Sreason': srea, 'Rstatus': rej})
                 return render(request, 'check.html', {'message': "Incorrect Password"})
             except:
                 return HttpResponseRedirect("/instruction")
