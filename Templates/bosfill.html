@@ -5,7 +5,28 @@
 
     <title>Application</title>
     <link rel="stylesheet" href="/static/bosfill.css">
+    <script>
+        function gfg(myid) {
+            var s = document.getElementById('e1').value.toLowerCase() + " " + document.getElementById('e2').value.toLowerCase() + " " + document.getElementById('e3').value.toLowerCase() + " " + document.getElementById('e4').value.toLowerCase() + "  " + document.getElementById('e5').value.toLowerCase() + " " + document.getElementById('e6').value.toLowerCase() + " " + document.getElementById('e7').value.toLowerCase() + " " + document.getElementById('e8').value.toLowerCase() + " " + document.getElementById('e9').value.toLowerCase();
+            var f = "telangana";
+            var ra = s.split(f).length - 1;
+            if (ra > 3) {
+                alert("More than three Telangana people not allowed ! ");
+                document.getElementById(myid).value = null;
+            }
 
+        }
+        function uniscam(myid) {
+            var s = document.getElementById('e1u').value.toLowerCase() + " " + document.getElementById('e2u').value.toLowerCase() + " " + document.getElementById('e3u').value.toLowerCase() + " " + document.getElementById('e4u').value.toLowerCase() + "  " + document.getElementById('e5u').value.toLowerCase() + " " + document.getElementById('e6u').value.toLowerCase() + " " + document.getElementById('e7u').value.toLowerCase() + " " + document.getElementById('e8u').value.toLowerCase() + " " + document.getElementById('e9u').value.toLowerCase();
+
+            var a = document.getElementById(myid).value.toLowerCase();
+            var r = s.split(a).length - 1;
+            if (r > 1 && a.length > 1) {
+                alert("You can't select same university more than once !");
+                document.getElementById(myid).value = null;
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -33,8 +54,8 @@
                     <tr>
                         <td class="toper" width="50%">Name of the Scholar </td>
 
-                        <td class="toper">: <input style=" width:200px; height:20px;font-size: 18px;border-width:0px;" type="text"
-                                id="name" name="cname" required>
+                        <td class="toper">: <input style=" width:200px; height:20px;font-size: 18px;border-width:0px;"
+                                type="text" id="name" name="cname" required>
                         </td>
                     </tr>
 
@@ -61,7 +82,7 @@
                 <tr>
                     <th width=4%>Sno.</th>
                     <th>Name of the Examiner</th>
-                    <th>State   </th>
+                    <th>State </th>
                     <th>Name of University</th>
                     <th>Mobile No.</th>
                     <th>Email id.</th>
@@ -69,72 +90,72 @@
                 <tr>
                     <td>1.</td>
                     <td><input type="text" name="e1name" required /></td>
-                    <td><input type="text" name="e1add" required /></td>
-                    <td><input type="text" name="e1uni" required /></td>
+                    <td><input id="e1" type="text" name="e1add" onchange="gfg('e1')" required /></td>
+                    <td><input id="e1u" type="text" name="e1uni" onchange="uniscam('e1u')" required /></td>
                     <td><input type="text" name="e1mob" required /></td>
                     <td><input type="text" name="e1mail" required /></td>
                 </tr>
                 <tr>
                     <td>2.</td>
                     <td><input type="text" name="e2name" required /></td>
-                    <td><input type="text" name="e2add" required /></td>
-                    <td><input type="text" name="e2uni" required /></td>
+                    <td><input id="e2" type="text" name="e2add" onchange="gfg('e2')" required /></td>
+                    <td><input id="e2u" type="text" name="e2uni" onchange="uniscam('e2u')" required /></td>
                     <td><input type="text" name="e2mob" required /></td>
                     <td><input type="text" name="e2mail" required /></td>
                 </tr>
                 <tr>
                     <td>3.</td>
                     <td><input type="text" name="e3name" required /></td>
-                    <td><input type="text" name="e3add" required /></td>
-                    <td><input type="text" name="e3uni" required /></td>
+                    <td><input id="e3" type="text" name="e3add" onchange="gfg('e3')" required /></td>
+                    <td><input id="e3u" type="text" name="e3uni" onchange="uniscam('e3u')" required /></td>
                     <td><input type="text" name="e3mob" required /></td>
                     <td><input type="text" name="e3mail" required /></td>
                 </tr>
                 <tr>
                     <td>4.</td>
                     <td><input type="text" name="e4name" required /></td>
-                    <td><input type="text" name="e4add" required /></td>
-                    <td><input type="text" name="e4uni" required /></td>
+                    <td><input id="e4" type="text" name="e4add" onchange="gfg('e4')" required /></td>
+                    <td><input id="e4u" type="text" name="e4uni" onchange="uniscam('e4u')" required /></td>
                     <td><input type="text" name="e4mob" required /></td>
                     <td><input type="text" name="e4mail" required /></td>
                 </tr>
                 <tr>
                     <td>5.</td>
                     <td><input type="text" name="e5nmae" required /></td>
-                    <td><input type="text" name="e5add" required /></td>
-                    <td><input type="text" name="e5uni" required /></td>
+                    <td><input id="e5" type="text" name="e5add" onchange="gfg('e5')" required /></td>
+                    <td><input id="e5u" type="text" name="e5uni" onchange="uniscam('e5u')" required /></td>
                     <td><input type="text" name="e5mob" required /></td>
                     <td><input type="text" name="e5mail" required /></td>
                 </tr>
                 <tr>
                     <td>6.</td>
                     <td><input type="text" name="e6name" required /></td>
-                    <td><input type="text" name="e6add" required /></td>
-                    <td><input type="text" name="e6uni" required /></td>
+                    <td><input id="e6" type="text" name="e6add" onchange="gfg('e6')" required /></td>
+                    <td><input id="e6u" type="text" name="e6uni" onchange="uniscam('e6u')" required /></td>
                     <td><input type="text" name="e6mob" required /></td>
                     <td><input type="text" name="e6mail" required /></td>
                 </tr>
                 <tr>
                     <td>7.</td>
                     <td><input type="text" name="e7name" required /></td>
-                    <td><input type="text" name="e7add" required /></td>
-                    <td><input type="text" name="e7uni" required /></td>
+                    <td><input id="e7" type="text" name="e7add" onchange="gfg('e7')" required /></td>
+                    <td><input id="e7u" type="text" name="e7uni" onchange="uniscam('e7u')" required /></td>
                     <td><input type="text" name="e7mob" required /></td>
                     <td><input type="text" name="e7mail" required /></td>
                 </tr>
                 <tr>
                     <td>8.</td>
                     <td><input type="text" name="e8name" required /></td>
-                    <td><input type="text" name="e8add" required /></td>
-                    <td><input type="text" name="e8uni" required /></td>
+                    <td><input id="e8" type="text" name="e8add" onchange="gfg('e8')" required /></td>
+                    <td><input id="e8u" type="text" name="e8uni" onchange="uniscam('e8u')" required /></td>
                     <td><input type="text" name="e8mob" required /></td>
                     <td><input type="text" name="e8mail" required /></td>
                 </tr>
                 <tr>
                     <td>9.</td>
                     <td><input type="text" name="e9name" required /></td>
-                    <td><input type="text" name="e9add" required /></td>
-                    <td><input type="text" name="e9uni" required /></td>
+                    <td><input id="e9" type="text" name="e9add" onchange="gfg('e9')" required /></td>
+                    <td><input id="e9u" type="text" name="e9uni" onchange="uniscam('e9u')" required /></td>
                     <td><input type="text" name="e9mob" required /></td>
                     <td><input type="text" name="e9mail" required /></td>
                 </tr>
