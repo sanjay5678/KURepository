@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Certificate</title>
+    <link rel="stylesheet" href="/static/certify.css">
+</head>
+
+<body>
+
+    <div class="whole">
+
+        <div class="container">
+            <div class="sub1" id="first">
+                <h2 style="font-style: italic;">Dr. Rajendar Katla<br><small style="opacity: 0.5;font-style: italic;">
+                        Professor of Commerce <br></small>
+                    <small style="font-style: italic;"> Addl.Controller of Examinations</small><br>
+                    (Confidential)
+
+                </h2>
+            </div>
+            <div class="sub2" id="second"><center>
+                <img src="/static/kulogo.jpeg" height="130px" width="130px" alt=""></center>
+            </div>
+            <div class="sub3" id="third">
+             <big><b><big>KAKATIYA UNIVERSITY</big></big></b>
+                <b><big>Vidyaranyapuri</big></b> <br>
+                <b>WARANGAL-506 009(T.S)</b>
+            </div>
+        </div>
+        <div class="sub4">
+           <big><b> <big><big>Accredited with 'A' Grade by NAAC</big></big></b></big>
+        </div>
+        <hr style="width: 90%;border-width: 2px;background-color: black;">
+        <div class="sub5">
+           <big> <b>Mobile:9701424920, Off:0870-2453800, Extn.511, Fax:0870-2438875, E-mail:acoe.e1@gmail.com</b></big>
+        </div>
+        <hr style="width: 90%;border-width: 2px;background-color: black;">
+        <div class="sub6">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id no:</th>
+                        <td>{{obj.id}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Date: </th>
+                        <td>{{obj.dateofsubmission}}
+                        </td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="sub7">
+            <h1 style="font-family: monospace;"><big>CERTIFICATE</big></h1>
+        </div>
+        <div class="sub8">
+            This is to certify that <b>Mr./Ms./Mrs.{{obj.cname}}</b>, S/o/D/o. <b>{{obj.fname}}</b>, Research Scholar in
+            <b>Java</b>, University
+            College, Kakatiya University, Warangal has submitted his/her Ph.D. thesis entitled <b>{{obj.titlethesis}}</b>,
+            under the supervision of <b>prof. {{obj.ftsubmit}}</b>, Department of {{obj.supdept}},
+            University college, kakatiya University,Warangal on <b style="text-decoration: underline;">{{obj.dateofsubmission}}</b> for the
+            award of Ph.D.Degree in <b>{{obj.tsubmit}}</b> of kakatiya
+            University, Warangal.
+        </div>
+        <div class="sub9">
+            <h2>Controller of Examination<br>(Confidential)</h2>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr style="width: 90%;border-width: 2px;background-color: blac">
+
+        <div class="sub">
+            <button onclick="window.print()" >Print</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

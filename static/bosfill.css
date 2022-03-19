@@ -1,0 +1,90 @@
+.whole {
+    width: 70%;
+    border: 2px solid black;
+    margin: auto;
+    
+}
+
+h1 {
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.main {
+    text-align: center;
+    border: 2px;
+    font-family: copperplate;
+
+}
+
+
+.para {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 0px;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+table,
+th,td{
+    border-collapse: collapse;
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-size: 18px;
+    padding:0px;
+}
+tr,td{
+    height: 50px;
+}
+td{
+    text-align: center;
+}
+
+.sub {
+    text-align: center;
+}
+
+.sub:hover {
+    color: aliceblue;
+
+}
+
+
+
+
+.btn {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-weight: bold;
+    background-color: rgb(206, 206, 250);
+    padding: 6px 38px;
+    margin: 2px 30px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    color: black;
+    background-color: rgb(208, 213, 255);
+    border: 3px solid black;
+}
+input{
+    background-color:rgb(217, 247, 255);
+    border-radius:2px;
+    border-width: 0px;
+    width: 90%;
+    height: 25px;
+    font-size: 18px;
+}
+.letterhead{
+    font-weight: 100;
+    line-height: 28px;
+}
+
+td.toper{
+    border:0px;
+    text-align: left;
+}

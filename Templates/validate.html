@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <title>Registration</title>
+
+    <link rel="stylesheet" href="/static/validate.css">
+
+</head>
+
+<body>
+    <form>
+        {% csrf_token %}
+        <div class="whole">
+            <div class="main">
+                <div class="logo">
+                    <img src="/static/kulogo.jpeg" width="100" height="100">
+                </div>
+                <big><big>
+                    <b><big><big> <big> KAKATIYA UNIVERSITY<br></big><b>
+                    </big></big></big></big>
+                <big><b>Warangal-506 009</b></big>
+                <h2 style="margin-bottom:03px;">FORM OF APPLICATION FOR SUBMISSION OF Ph.D THESIS.</h2>
+            </div>
+            <div id="para"><center>
+                <p><b>Fee Details:</b>
+                    <br>
+                    <br>
+                    <b>UPI reference ID</b> :{{upiid}}
+                    <br><br>
+                    <b>Online/phonepay/G.Pay/Amount</b> : {{amount}}<br><br>
+                    <b>Date Of Payment</b>:{{paymt}}<br><br>
+                    <b>Proof Of Payment</b>:{{payss}}
+                </p></center>
+            </div>
+            <br>
+            <center>
+                <table style="margin: auto;width: 90%;">
+                    <thead>
+                        <tr>
+                            <th>Name Of The Candidate(In Capital) Shri/Mr./Ms.<br>(as per your Pre-Ph.D qualified Memo)
+                            </th>
+                            <td>: {{cname}}</td>
+                        </tr>
+                        <tr>
+                            <th>Father Name</th>
+                            <td>: {{fname}}</td>
+                        </tr>
+                        <tr>
+                            <th>Date Of Birth</th>
+                            <td>: {{dob}}</td>
+                        </tr>
+                        <tr>
+                            <th>Mobile No</th>
+                            <td>: {{mob}}</td>
+                        </tr>
+                        <tr>
+                            <th>Candidate Photo</th>
+                            <td>: {{photo}}</td>
+                        </tr>
+                        <tr>
+                            <th>Email id</th>
+                            <td>: {{mail}}</td>
+                        </tr>
+                        <tr>
+                            <th>Candidate Permanant Address</th>
+                            <td>: {{addr}}</td>
+                        </tr>
+
+                        <tr>
+                            <th>Subject Your Thesis to be submit</th>
+                            <td>: {{tsubmit}}</td>
+                        </tr>
+                        <tr>
+                            <th>Faculty of Thesis to Submit</th>
+                            <td>: {{fsubmit}}</td>
+                        </tr>
+                        <tr>
+                            <th>M.A/M.Sc. M.Com. /P.G or<br> Its equal examination has passed</th>
+                            <td>: {{equalexam}}</td>
+                        </tr>
+                        <tr>
+                            <th>Name of the University/Month/ Year of passing</th>
+                            <td>: {{univer}}</td>
+                        </tr>
+                        <tr>
+                            <th>Month/ Year of passing</th>
+                            <td>: {{monthyear}}</td>
+                        </tr>
+                        <tr>
+                            <th>Name of the Supervisor</th>
+                            <td>: {{supname}}</td>
+                        </tr>
+                        <tr>
+                            <th>Supervisor Department</th>
+                            <td>: {{supdept}}</td>
+                        </tr>
+                        <tr>
+                            <th>Supervisor working address</th>
+                            <td>: {{supwadd}}</td>
+                        </tr>
+                        <tr>
+                            <th>Ph.D. admission order No./Date</th>
+                            <td>: {{ador}}</td>
+                        </tr>
+                        <tr>
+                            <th>Supervisors' report</th>
+                            <td>: {{supre}}</td>
+                        </tr>
+                        <tr>
+                            <th>Title of the thesis as per your dean order</th>
+                            <td>: {{titlethesis}}</td>
+                        </tr>
+                        <tr>
+                            <th>Title of the thesis to be submit as per your
+                                admission order issued by <br>the concerned dean of
+                                the faculty</th>
+                            <td>: {{th}}</td>
+                        </tr>
+                        <tr>
+                            <th>Year of Admission of Ph.D. Course</th>
+                            <td>: {{yearofadd}}</td>
+                        </tr>
+                        <tr>
+                            <th>Full time /Part-time</th>
+                            <td>: {{time}}</td>
+                        </tr>
+                        <tr>
+                            <th>You are submitting thesis within your prescribed time </th>
+                            <td>
+                                : {{ptime}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>You are taken time bar permission <br>(if Yes Attach File)</th>
+                            <td>: {{otime}} / {{otf}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Pre-Ph.D qualified month and year</th>
+                            <td>: {{prephd}}</td>
+                        </tr>
+                        <tr>
+                            <th>No. of articles submitted <br> (Attested by the Supervisor,Bos and dean)</th>
+                            <td>: {{article}}</td>
+                        </tr>
+                        <tr>
+                            <th>Upload synopsis<br>(Soft Copy pdf)</th>
+                            <td>: {{syn}}</td>
+                        </tr>
+                        <tr>
+                            <th>Upload thesis<br>(Soft Copy pdf)</th>
+                            <td>: {{fthesis}}</td>
+                        </tr>
+                        <tr>
+                            <th>Plagerism Certificate</th>
+                            <td>: {{pc}}</td>
+                        </tr>
+                        <tr>
+                            <th>Date of submission</th>
+                            <td>: {{date}}</td>
+                        </tr>
+                        <tr>
+                            <th>No Due Certificate</th>
+                            <td>: {{noc}}</td>
+                        </tr>
+                    </thead>
+                </table>
+            </center>
+            <br>
+            <br>
+            <div class="bottom">
+                Date Of Application :{{mydate}}<br><br>
+                Signature Of the Applicant :{{sign}}
+            </div>
+            <br>
+        </div>
+        <br>
+        <br>
+        <div class="sub">
+            <a href="success" class="btn">Submit</a>
+            <a class="btn" onClick="javascript:history.go(-1);">Edit</a>
+        </div>
+        <br>
+        <br>
+        <br>
+        </div>
+    </form>
+</body>
+
+</html>

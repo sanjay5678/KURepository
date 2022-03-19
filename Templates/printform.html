@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <title>Print</title>
+
+<link rel="stylesheet" href="/static/printform.css">
+
+
+</head>
+
+<body>
+
+        <div class="whole">
+            <center>
+                <div class="imgdiv">
+                    <img class="photo" src="media/{{obj.photo}}">
+                </div>
+            </center>
+            <br>
+            <div class="para">
+                <p><b><u>Fee Details</u></b>
+                    <br>
+                    <br>
+                    UPI reference ID : <input name="fname" class="info" type="text" value="{{obj.upiid}}"
+                        style="text-transform:uppercase;width:30%;height: 30px;font-size: 20px;" required readonly>
+                    <br><br>
+                    Online/phonepay/G.Pay Amount :<input name="fname" class="info" type="text" value="{{obj.amount}}"
+                        style="text-transform:uppercase;width:30%;height: 30px;font-size: 20px;" required
+                        readonly><br><br>
+                    Date Of Payment :<input name="fname" class="info" type="text" value="{{obj.paymentdate}}"
+                        style="text-transform:uppercase;width:30%;height: 30px;font-size: 20px;" required
+                        readonly><br><br>
+
+                </p>
+            </div>
+            <br>
+            <table style="border: 0px solid black;margin: auto;width: 90%;">
+                <thead>
+                    <tr>
+                        <th>Application ID</th>
+                        <td><input name="cname" value={{obj.id}} class="info" type="text"
+                                style="text-transform:uppercase;width:100%;height: 30px;font-size: 20px;" required
+                                readonly>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Name Of The Candidate(In Capital) Shri/Mr./Ms.<br>(as per Pre-Ph.D Memo)</th>
+                        <td><input name="cname" value={{obj.cname}} class="info" type="text"
+                                style="text-transform:uppercase;width:100%;height: 30px;font-size: 20px;" required
+                                readonly>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Father Name</th>
+                        <td><input name="fname" class="info" type="text" value="{{obj.fname}}"
+                                style="text-transform:uppercase;width:100%;height: 30px;font-size: 20px;" required
+                                readonly></td>
+                    </tr>
+                    <tr>
+                        <th>Date Of Birth</th>
+                        <td><input name="dob" value="{{obj.dob}}" class="info" type="text"
+                                style="width:100%;height: 30px;font-size: 20px;" required readonly></td>
+                    </tr>
+                    <tr>
+                        <th>Mobile No</th>
+                        <td><input name="mob" class="info" value="{{obj.mob}}" type="text" maxlength="10"
+                                style="width:100%;height: 30px;font-size: 20px;" required readonly>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Email id </th>
+                        <td><input name="email" class="info" type="text" value="{{obj.email}}"
+                                style="width:100%;height: 30px;font-size: 20px;" required readonly></td>
+                    </tr>
+                    <tr>
+                        <th>Permanant Address</th>
+                        <td><input name="address" value="{{obj.address}}" value="address"
+                                style="width:100%;height: 30px;font-size: 20px; border:0px" required readonly></td>
+                    </tr>
+                    <tr>
+                        <th>Subject Thesis to be submitted</th>
+                        <td><input class="info" name="tsubmit" value="{{obj.tsubmit}}" type="text"
+                                style="width:100%;height: 30px;font-size: 20px;" required readonly></td>
+                    </tr>
+                    <tr>
+                        <th>Faculty of Thesis to Submitted</th>
+                        <td><input class="info" name="ftsubmit" value="{{obj.ftsubmit}}" type="text"
+                                style="width:100%;height: 30px;font-size: 20px;" required readonly></td>
+                    </tr>
+                    <tr>
+                        <th>M.A/M.Sc. M.Com. /P.G or<br> Its equal examination has passed</th>
+                        <td><input class="info" name="equalexam" type="text" value="{{obj.equalexam}}"
+                                style="width:100%;height: 30px;font-size: 20px;" required readonly></td>
+                    </tr>
+                    <tr>
+                        <th>Name of the University</th>
+                        <td><input class="info" name="university" value="{{obj.university}}" type="text"
+                                style="width:100%;height: 30px;font-size: 20px;" required readonly></td>
+                    </tr>
+                    <tr>
+                        <th>Month/ Year of passing</th>
+                        <td><input class="info" name="monthyear" value="{{obj.monthyear}}" placeholder="mm/yyyy"
+                                type="text" style="width:100%;height: 30px;font-size: 20px;" required readonly></td>
+                    </tr>
+                    <tr>
+                        <th>Name of the Supervisor</th>
+                        <td><input class="info" name="supname" value="{{obj.supname}}" type="text"
+                                style="width:100%;height: 30px;font-size: 20px;" required readonly></td>
+                    </tr>
+                    <tr>
+                        <th>Supervisor Department</th>
+                        <td><input class="info" name="supdept" value="{{obj.supdept}}" type="text"
+                                style="width:100%;height: 30px;font-size: 20px;" required readonly></td>
+                    </tr>
+                    <tr>
+                        <th>Supervisor working address</th>
+                        <td><input class="info" name="supwadd" type="text" value="{{obj.supwadd}}"
+                                style="width:100%;height: 30px;font-size: 20px;" required readonly></td>
+                    </tr>
+                    <tr>
+                        <th>Title of the thesis as per Dean order</th>
+                        <td><input class="info" name="titlethesis" type="text" value="{{obj.titlethesis}}"
+                                style="width:100%;height: 30px;font-size: 20px;" required readonly></td>
+                    </tr>
+                    <tr>
+                        <th>Year of Admission of Ph.D. Course</th>
+                        <td><input class="info" name="yearofadd" type="number" value="{{obj.yearofadd}}"
+                                style="width:100%;height: 30px;font-size: 20px;" required readonly></td>
+                    </tr>
+                    <tr>
+                        <th>Full time /Part-time</th>
+                        <td>
+                            <input class="info" name="titlethesis" value="{{obj.time}}" type="text"
+                                style="width:100%;height: 30px;font-size: 20px;" required readonly>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Are you submitting thesis within your prescribed time? </th>
+                        <td>
+                            <input class="info" value="{{obj.ptime}}" type="text"
+                                style="width:100%;height: 30px;font-size: 20px;" required readonly>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Pre-Ph.D qualified month and year</th>
+                        <td><input class="info" name="prephd" value="{{obj.prephd}}" type="text"
+                                style="width:100%;height: 30px;font-size: 20px;" required readonly></td>
+                    </tr>
+                    <tr>
+                        <th>No. of articles submitted <br> (Attested by the Supervisor,Bos,Head and Dean) </th>
+                        <td><input class="info" value="{{obj.article}}" name="article" type="number"
+                                style="width:100%;height: 30px;font-size: 20px;" required readonly></td>
+                    </tr>
+                    <tr>
+                        <th>Date of submission</th>
+                        <td><input name="dateofsubmission" value="{{obj.dateofsubmission}}" class="info" type="text"
+                                style="width:100%;height: 30px;font-size: 20px;" readonly required></td>
+                    </tr>
+                </thead>
+            </table>
+            <br>
+            <br>
+            <center>
+                <div class="bottom">
+                    Date Of Application :<input name="dob" value="{{obj.myDate}}" class="info" type="text"
+                        style="width:20%;height: 30px;font-size: 20px;" required readonly><br><br>
+                    <div class="sign"><img class="image" src="media/{{obj.sign}}"><br>
+                        Signature </div>
+            </center>
+            <br>
+        </div>
+        <br>
+        <br>
+
+        <br>
+        <br>
+        <br>
+        </div>
+        <div class="sub">
+            <button onclick="window.print()">Print</button>
+            <a href="/Approveds">Back</a>
+        </div>
+
+</body>
+
+</html>

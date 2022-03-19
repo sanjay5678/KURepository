@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <title>Intro</title>
+    <link rel="stylesheet" href="/static/instruction.css">
+    <script src="/static/instruction.js" type="text/javascript">
+    </script>
+</head>
+<body>
+    <form method="get" action="/login" onsubmit="return checkForm(this);">
+        {% csrf_token %}
+        <div class="whole">
+            <div class="main">
+                <div class="logo">
+                    <img src="/static/kulogo.jpeg" width="100" height="100">
+                </div>
+                <big><big>
+                    <b><big><big> <big> KAKATIYA UNIVERSITY<br></big><b>
+                    </big></big></big></big>
+                <h2>Warangal-506 009 </h2>
+                <hr style="width:50%;margin-left:25%;border-width:2px;background-color: black;">
+                <h3>APPLICATION FOR SUBMISSION OF Ph.D THESIS.</h3>
+            </div>
+            <div class="extract">
+                EXTRACT OF RELEVANT RULES REGARDING SUBMISSION OF THESIS <br>
+            </div>
+            <div class="para">
+                <br>
+                <ul>
+                    <li>A Candidate shall, on the completion of his work, submit to the Controller of Examinations.
+                    </li>
+                </ul>
+                <ol>
+                    <li> An Application on the prescribed form together with a Receipt for payment of the prescribed Fee
+                        for examining the Thesis / Dissertation. </li><br> <br>
+
+                    <li> A Certificate signed by the Supervisor that his work and progress have been satisfactory and
+                        that in the opinion of the Supervisor the Thesis/Dissertation may be submitted for the award of
+                        the Degree of Doctor of Philosophy / Master of Philosophy.</li> <br> <br>
+
+                    <li style="color: red;"> <b>Submit Hard Copies of Ph.D Thesis at Examination Branch after
+                            Successfull
+                            Submission of Soft Copies <br>
+                            <big>(4 Thesis + 4 Synopsis)</big></b>
+                    </li> <br>
+                    <br>
+                    <li> The Thesis shall be written in English provided, however, that when the Thesis on the Subject
+                        of other languages that English, It may be in the language itself or in English, When the Thesis
+                        is written in a language other than English, a detailed summary of the Thesis shall also be
+                        submitted along with it in English. </li> <br>
+                </ol>
+                <div class="extract">INSTRUCTIONS TO THE CANDIDATE</div>
+                <ul>
+                    <li> Candidate is instructed to be very careful about the entries to be made in the given
+                        columns. All entries should be in Candidates own concern and Candidate will be held
+                        personally responsible for any incorrect entry that he/she makes.</li> <br> <br>
+                    <li> The University reserves the right to cancel the admission of the Candidate at any stage when it
+                        is detected that his or her admission to the Examination or the College is against rules. </li>
+                    <br> <br>
+                    <li> The name of the Candidate and that of his/her Father given here under should correspond to
+                        those
+                        mentioned in the Master's Degree or its equivalent Certificate. </li><br> <br>
+                    <li> The Original Master's Degree Certificate must be attached.</li><br><br>
+                    <center style="color: red;"> <b>Candidates can Pay their Fee to the Following SBI account </b>
+                        <h2><b>Ac.No:52026910298<br>IFSC code: SBIN0020262</b></h2>
+                    </center>
+                </ul>
+            </div>
+            <div class="box" style="text-align: center;">
+                <p style="font-family: monospace;"><input type="checkbox" name="terms" "> I have read all the Instructions</p>
+            </div> 
+            <div class=" sub">
+                    <input type="submit" class="btn" name="sbmt" value="Proceed to Register">
+            </div><br>
+        
+        </div>
+    </form>
+</body>
+
+</html>

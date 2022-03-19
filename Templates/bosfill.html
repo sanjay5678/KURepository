@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Application</title>
+    <link rel="stylesheet" href="/static/bosfill.css">
+
+</head>
+
+<body>
+    <form method="post" action="/bosprint" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="whole">
+            <div class="main">
+                <div class="logo">
+                    <img src="/static/kulogo.jpeg" width="100" height="100">
+                </div>
+                <big><big><b><big><big> <big> EXAMINATION BRANCH<br></big></b></big></big></big></big>
+                <big><big><big> KAKATIYA UNIVERSITY<br></big></big></big>
+                <big>Warangal-506 009</big>
+            </div>
+            <div class="para">
+                <p>
+                <p style="text-align: right;">
+                    Date :<input type="text" id="date" name="myDate" style="width:200px;height: 30px;font-size: 20px;"
+                        onchange="datefun()" readonly></p>
+                <br>
+                <p class="letterhead">
+                    To<br>The COE,<br>Kakatiya University,<br>Warangal.</p>
+                </p>
+                <table style="border-width:0px;">
+                    <tr>
+                        <td class="toper" width="50%">Name of the Scholar </td>
+
+                        <td class="toper">: <input style=" width:200px; height:20px;font-size: 18px;border-width:0px;" type="text"
+                                id="name" name="cname" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="toper">Subject </td>
+                        <td class="toper"> : <input style="width:200px; height:20px;font-size: 18px;" type="text"
+                                id="subject" name="subject" required></td>
+                    </tr>
+                    <tr>
+                        <td class="toper">Topic </td>
+                        <td class="toper">
+                            : <input style="width:200px; height:20px;font-size: 18px;" type="text" id="topic"
+                                name="topic" required>
+                        </td class="toper">
+                    </tr>
+                    <tr>
+                        <td class="toper">Name of the Supervisor </td>
+                        <td class="toper">: <input name="sname" type="text"
+                                style="width:200px;height: 20px;font-size: 18px;font-size: 20px;" required></td>
+                    </tr>
+                </table>
+            </div>
+            <table style="border: 0px solid black;margin: auto;width: 95%;">
+                <tr>
+                    <th width=4%>Sno.</th>
+                    <th>Name of the Examiner</th>
+                    <th>State   </th>
+                    <th>Name of University</th>
+                    <th>Mobile No.</th>
+                    <th>Email id.</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td><input type="text" name="e1name" required /></td>
+                    <td><input type="text" name="e1add" required /></td>
+                    <td><input type="text" name="e1uni" required /></td>
+                    <td><input type="text" name="e1mob" required /></td>
+                    <td><input type="text" name="e1mail" required /></td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td><input type="text" name="e2name" required /></td>
+                    <td><input type="text" name="e2add" required /></td>
+                    <td><input type="text" name="e2uni" required /></td>
+                    <td><input type="text" name="e2mob" required /></td>
+                    <td><input type="text" name="e2mail" required /></td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td><input type="text" name="e3name" required /></td>
+                    <td><input type="text" name="e3add" required /></td>
+                    <td><input type="text" name="e3uni" required /></td>
+                    <td><input type="text" name="e3mob" required /></td>
+                    <td><input type="text" name="e3mail" required /></td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td><input type="text" name="e4name" required /></td>
+                    <td><input type="text" name="e4add" required /></td>
+                    <td><input type="text" name="e4uni" required /></td>
+                    <td><input type="text" name="e4mob" required /></td>
+                    <td><input type="text" name="e4mail" required /></td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td><input type="text" name="e5nmae" required /></td>
+                    <td><input type="text" name="e5add" required /></td>
+                    <td><input type="text" name="e5uni" required /></td>
+                    <td><input type="text" name="e5mob" required /></td>
+                    <td><input type="text" name="e5mail" required /></td>
+                </tr>
+                <tr>
+                    <td>6.</td>
+                    <td><input type="text" name="e6name" required /></td>
+                    <td><input type="text" name="e6add" required /></td>
+                    <td><input type="text" name="e6uni" required /></td>
+                    <td><input type="text" name="e6mob" required /></td>
+                    <td><input type="text" name="e6mail" required /></td>
+                </tr>
+                <tr>
+                    <td>7.</td>
+                    <td><input type="text" name="e7name" required /></td>
+                    <td><input type="text" name="e7add" required /></td>
+                    <td><input type="text" name="e7uni" required /></td>
+                    <td><input type="text" name="e7mob" required /></td>
+                    <td><input type="text" name="e7mail" required /></td>
+                </tr>
+                <tr>
+                    <td>8.</td>
+                    <td><input type="text" name="e8name" required /></td>
+                    <td><input type="text" name="e8add" required /></td>
+                    <td><input type="text" name="e8uni" required /></td>
+                    <td><input type="text" name="e8mob" required /></td>
+                    <td><input type="text" name="e8mail" required /></td>
+                </tr>
+                <tr>
+                    <td>9.</td>
+                    <td><input type="text" name="e9name" required /></td>
+                    <td><input type="text" name="e9add" required /></td>
+                    <td><input type="text" name="e9uni" required /></td>
+                    <td><input type="text" name="e9mob" required /></td>
+                    <td><input type="text" name="e9mail" required /></td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <div class="sub">
+                <button class="btn btn-primary " type="submit">Submit </button>
+            </div>
+            <br>
+            <br>
+            <br>
+        </div>
+
+    </form>
+    <script>
+        const monthNames = ["January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December"];
+        const dateObj = new Date();
+        const month = monthNames[dateObj.getMonth()];
+        const day = String(dateObj.getDate()).padStart(2, '0');
+        const year = dateObj.getFullYear();
+        const output = day + '/' + (Math.abs(monthNames.indexOf(month + 1)) + 2) + '/' + year;
+        document.getElementById('date').value = output;
+    </script>
+</body>
+
+</html>
